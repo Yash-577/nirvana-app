@@ -29,7 +29,14 @@ const app = express();
 const server = http.createServer(app);
 
 // Middleware
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://nirvana-app-self.vercel.app",
+    credentials: true,
+  })
+);
+
+
 app.use(express.json());
 
 // Routes
@@ -51,10 +58,12 @@ app.use(errorHandler);
 
 const io = new Server(server, {
   cors: {
-    origin: "*", // later restrict to frontend domain
+    origin: "https://nirvana-app-self.vercel.app",
     methods: ["GET", "POST"],
+    credentials: true,
   },
 });
+
 
 io.on("connection", (socket) => {
   console.log("🔌 New client connected:", socket.id);
