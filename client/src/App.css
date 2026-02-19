@@ -1,0 +1,15 @@
+/* =========================
+   ROOT LAYOUT
+========================= */
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Remove Vite default styles */
+.logo,
+.read-the-docs {
+  display: none;
+}

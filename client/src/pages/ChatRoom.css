@@ -1,0 +1,142 @@
+/* =========================
+   CHATROOM – PREMIUM UI
+========================= */
+
+.chatroom-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-color);
+}
+
+/* Header */
+.chatroom-header {
+  padding: 1rem;
+  font-weight: 600;
+  border-bottom: 1px solid var(--border-color);
+  background: var(--card-bg);
+}
+
+/* Messages area */
+.chatroom-messages {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Message row alignment */
+.message-row {
+  display: flex;
+}
+
+.message-row.me {
+  justify-content: flex-end;
+}
+
+.message-row.other {
+  justify-content: flex-start;
+}
+
+/* Bubble base */
+.message-bubble {
+  max-width: 70%;
+  padding: 0.6rem 0.9rem;
+  border-radius: 18px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  word-wrap: break-word;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* My message */
+.me-bubble {
+  background: var(--primary-green);
+  color: #fff;
+  border-bottom-right-radius: 6px;
+}
+
+/* Other message */
+.other-bubble {
+  background: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  border-bottom-left-radius: 6px;
+}
+
+/* Input area */
+.chatroom-input-area {
+  display: flex;
+  gap: 0.6rem;
+  padding: 0.8rem;
+  border-top: 1px solid var(--border-color);
+  background: var(--card-bg);
+}
+
+.chatroom-input {
+  flex: 1;
+  padding: 0.6rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-size: 0.9rem;
+}
+
+.chatroom-input:focus {
+  outline: none;
+  border-color: var(--primary-green);
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.15);
+}
+
+.chatroom-send-btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  border: none;
+  background: var(--primary-green);
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.chatroom-send-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* Dark mode tweaks */
+[data-theme="dark"] .me-bubble {
+  background: #22c55e;
+}
+
+[data-theme="dark"] .chatroom-send-btn {
+  background: #22c55e;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .chatroom-messages {
+    padding: 0.8rem;
+  }
+
+  .message-bubble {
+    max-width: 85%;
+  }
+}
+
+@media (max-width: 480px) {
+  .chatroom-header {
+    padding: 0.8rem;
+  }
+
+  .chatroom-input-area {
+    padding: 0.6rem;
+  }
+
+  .chatroom-send-btn {
+    padding: 0.5rem 1rem;
+  }
+}
