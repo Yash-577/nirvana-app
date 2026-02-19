@@ -26,7 +26,12 @@ const Navbar = () => {
         <Link to="/create" className="nav-icon">➕</Link>
         <Link to="/chats" className="nav-icon">💬</Link>
         <Link to="/profile" className="nav-icon">👤</Link>
-        <Link to="/about" className="nav-link">About</Link>
+        <Link to="/about" className="nav-icon nav-about">
+  <span className="about-text">About</span>
+  <span className="about-icon">ℹ️</span>
+</Link>
+
+
 
         <ThemeToggle />
 

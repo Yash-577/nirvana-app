@@ -16,16 +16,19 @@ const About = () => {
         <h1 style={{ marginBottom: "1rem" }}>About Nirvana 🌿</h1>
 
         <p>
-          Nirvana is a mindful content-sharing platform where users can post
-          thoughts, articles, media, and books in a clean and distraction-free
-          environment.
+          Nirvana is a platform where people can share and explore articles, blogs,
+          photos, videos, audio and books to help each other grow in the journey
+          of discovering the self.
         </p>
 
         <p>
-          The goal of Nirvana is simple — to create a peaceful digital space
-          where ideas matter more than noise. Users can share meaningful
-          content, rate posts, and explore knowledge without unnecessary
-          clutter.
+          It is a content sharing and messaging platform where people can find and share meaningful
+          thoughts and experiences to help everyone attain enlightenment in their lives.
+          Many people walk on the path to discover themselves in the search for nirvana,
+          this platform is designed for those people to find other dedicated people, connect
+          with them and find some spiritual content to grow in their journey of discovering 
+          the truth.
+    
         </p>
 
         <h3 style={{ marginTop: "1.5rem" }}>✨ Key Features</h3>
@@ -33,20 +36,21 @@ const About = () => {
           <li>Create and share posts (text, images, videos, audio, PDFs)</li>
           <li>Rate content using a 5-star system</li>
           <li>Infinite scrolling feed</li>
-          <li>Clean and minimal UI</li>
-          <li>Role-based permissions (user/admin)</li>
+          <li>Private chats section</li>
+          <li>Dark & light modes</li>
         </ul>
 
-        <h3 style={{ marginTop: "1.5rem" }}>🚀 Built With</h3>
+        <h3 style={{ marginTop: "1.5rem" }}>🚀 Built for</h3>
         <ul>
-          <li>React.js (Frontend)</li>
-          <li>Node.js & Express (Backend)</li>
-          <li>MongoDB (Database)</li>
-          <li>JWT Authentication</li>
+          <li>Uplifting Consciousness</li>
+          <li>Discovering truth, nirvana, salvation, moksha or enlightenment</li>
+          <li>Helping each other</li>
+          <li>Growing together</li>
         </ul>
 
         <p style={{ marginTop: "1.5rem", fontStyle: "italic" }}>
-          “Nirvana is not just an app — it’s a calm corner of the internet.”
+          “Enlightenment is not an achievement, it is an understanding that there
+          is nothing to achieve, nowhere to go.” - osho
         </p>
       </main>
     </>

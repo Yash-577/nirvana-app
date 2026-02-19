@@ -54,7 +54,7 @@ const CreatePost = () => {
             <label>Title</label>
             <input
               type="text"
-              placeholder="Enter a meaningful title"
+              placeholder="Enter a title"
               value={title}
               required
               onChange={(e) => setTitle(e.target.value)}
@@ -79,7 +79,7 @@ const CreatePost = () => {
           <div className="form-group">
             <label>Content (Optional)</label>
             <textarea
-              placeholder="Write something meaningful..."
+              placeholder="Write something..."
               value={content}
               onChange={(e) => setContent(e.target.value)}
               rows={5}

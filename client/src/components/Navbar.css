@@ -50,6 +50,17 @@
   opacity: 0.8;
 }
 
+/* About (text + icon toggle) */
+.nav-about .about-icon {
+  display: none; /* hide icon on desktop */
+}
+
+.nav-about .about-text {
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: inline-block; 
+}
+
 /* About link */
 .nav-link {
   font-size: 0.9rem;
@@ -97,9 +108,15 @@
     gap: 0.8rem;
   }
 
-  .nav-link {
-    display: none; /* Hide About text on smaller screens */
-  }
+ /* Hide About text on mobile and show icon instead */
+.nav-about .about-text {
+  display: none;
+}
+
+.nav-about .about-icon {
+  display: inline-block;
+}
+
 }
 
 @media (max-width: 480px) {
