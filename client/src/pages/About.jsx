@@ -23,7 +23,7 @@ const About = () => {
 
         <p>
           It is a content sharing and messaging platform where people can find and share meaningful
-          thoughts and experiences to move forward on the path of enlightenment.
+          thoughts and experiences to move forward on the path of enlightenment
           Many people walk on the path to discover themselves in the search for nirvana,
           this platform is designed for those people to find other dedicated people, connect
           with them and find some spiritual content to grow in their journey of discovering 
