@@ -20,7 +20,8 @@ const Home = () => {
 
     try {
       const { data } = await api.get(
-        `/posts?page=${page}&limit=10&sort=top`
+       `/posts?page=${page}&limit=10&sort=top`
+
       );
 
       const newPosts = Array.isArray(data) ? data : data.posts;
