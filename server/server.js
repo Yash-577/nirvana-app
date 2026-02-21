@@ -39,6 +39,12 @@ app.use(
 
 app.use(express.json());
 
+// ✅ ADD PING ROUTE HERE
+app.get("/ping", (req, res) => {
+  res.end("OK");
+});
+
+
 // Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/posts", postRoutes);
